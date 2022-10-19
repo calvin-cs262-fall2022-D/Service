@@ -17,9 +17,9 @@ CREATE TABLE Movie (
 	name varchar(50) NOT NULL,
   vimeoKey varchar(50),
   imageLink varchar(200),
-  favorite boolean,
-  description varchar(500),
   semester varchar(50),
+  description varchar(500),
+
 	);
 
 -- Allow users to select data from the tables.
