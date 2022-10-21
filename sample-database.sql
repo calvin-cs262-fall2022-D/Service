@@ -19,8 +19,7 @@ CREATE TABLE Movie (
   imageLink varchar(200),
   semester varchar(50),
   description varchar(500),
-
-	);
+);
 
 -- Allow users to select data from the tables.
 GRANT SELECT ON Movie TO PUBLIC;
