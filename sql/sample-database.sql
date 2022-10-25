@@ -29,34 +29,7 @@ INSERT INTO Movie VALUES (14, 'The Night In',	757002222, 'https://i.vimeocdn.com
 INSERT INTO Movie VALUES (25,	'The Craft of Storytelling',	335503421, 'https://i.vimeocdn.com/video/782102978-7adc9e3d1164221a673f204b99393a1b931ecb1e5f801d9794a7a3434aef0c85-d?mw=700&mh=393&q=70', 'spring2019', 'cas180', 'Storytelling is described by music and writing professors at Calvin');
 INSERT INTO Movie VALUES (32,	'Empty Halls',	335497454,	'https://i.vimeocdn.com/video/782095290-d26ca64400bc50b080bf24ec92a8d50a6996ed9b7a23a5e097473bd10330b562-d?mw=700&mh=393&q=70',	'spring2019', 'cas190',	'A new resident has trouble adjusting to his floor and it''s strange residents.');
 
--- SAMPLE QUERIES
 
--- Search by title: supposed the user typed in "the" in search bar
-SELECT name
-FROM Movie
-WHERE name LIKE '%The%';
-
--- Search by semester 
-SELECT name
-FROM Movie
-WHERE Movie.semester = 'fall2021';
-
--- Search by semester and title
-SELECT name
-FROM Movie
-WHERE Movie.semester = 'spring2021'
-AND name LIKE '%Vampire%';
-
--- Search by class
-SELECT name
-FROM Movie
-WHERE Movie.class = 'cas180';
-
--- Search by class and title
-SELECT name
-FROM Movie
-WHERE Movie.class = 'cas180'
-AND name LIKE '%Running%';
 
 
 
