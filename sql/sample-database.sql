@@ -25,8 +25,11 @@ INSERT INTO Movie VALUES (2, 'Docsology', 760084464, 'https://i.vimeocdn.com/vid
 INSERT INTO Movie VALUES (3, 'Running Late', 760086030, 'https://i.vimeocdn.com/video/1526512117-ef6e5804ac3f14ae9b43c38402170e6caab07c218ede263f040f16752151b5cb-d?mw=700&mh=393&q=70','fall2021', 'cas180', 'Guy runs late for his class, and shenanigans ensue.');
 INSERT INTO Movie VALUES (4, 'The 7:00 AM Morning Show', 760075949, 'https://i.vimeocdn.com/video/1526493708-ccba673c361e36be07c1452cab337b230949933b11a3f80719f07379aa6de4e5-d?mw=700&mh=393&q=70', 'spring2021', 'cas180', 'The Morning Show presents entertaining satire news stories for Calvin University.');
 INSERT INTO Movie VALUES (5, 'Vampire-19', 760074311, 'https://i.vimeocdn.com/video/1526490906-b52c60880e7e08f77fa73b8e4533bf0f6affae56e6eecf746f5fb52ca5070be5-d?mw=700&mh=393&q=70','spring2021', 'cas180', 'Vampires look for prey during the COVID-19 pandemic.');
+INSERT INTO Movie VALUES (6, 'Conspiracy',	760073210,	'https://i.vimeocdn.com/video/1526488639-a4bf3733fc3143aea1dd8a87f2ac0bee66f44c37cebff50485f381be6e178e0e-d?mw=700&mh=393&q=70', 	'spring2021',	'cas180',	'A flat earth scientist attempts to prove that the Earth is flat, but is chased by the government.');
+INSERT INTO Movie VALUES (7, 'New Hobbies',	756985037	, 'https://i.vimeocdn.com/video/1520550321-2a09fc763a03b9a404296208223053cdeda8afb47442d1a7bc4e6a183e3afa95-d?mw=700&mh=393&q=70',	'spring2021',	'cas190',	'A closer look at two people with different hobbies-- photography and quilting.');
 INSERT INTO Movie VALUES (14, 'The Night In',	757002222, 'https://i.vimeocdn.com/video/1520586673-f6e2710c3153c994f3b83f0b1a963b59c67d71e82ff2e7e85a069ff22f3a7155-d?mw=700&mh=393&q=70', 'fall2020', 'cas290', 'After testing positive for covid, a man enjoys a relaxing night in.');
-INSERT INTO Movie VALUES (25,	'The Craft of Storytelling',	335503421, 'https://i.vimeocdn.com/video/782102978-7adc9e3d1164221a673f204b99393a1b931ecb1e5f801d9794a7a3434aef0c85-d?mw=700&mh=393&q=70', 'spring2019', 'cas180', 'Storytelling is described by music and writing professors at Calvin');
+INSERT INTO Movie VALUES (25,	'The Craft of Storytelling', 335503421, 'https://i.vimeocdn.com/video/782102978-7adc9e3d1164221a673f204b99393a1b931ecb1e5f801d9794a7a3434aef0c85-d?mw=700&mh=393&q=70', 'spring2019', 'cas180', 'Storytelling is described by music and writing professors at Calvin');
+INSERT INTO Movie VALUES (28,	'Wyoming Police Department', 335497738	,'https://i.vimeocdn.com/video/782095711-895b8e07c9f997faf44e5ec07b0f7d84b104ee880ef50c5125bf9ea7d37dd8bf-d?mw=700&mh=393&q=70',	'spring2019',	'cas190',	'Learn about the Wyoming police department and what they do.');
 INSERT INTO Movie VALUES (32,	'Empty Halls',	335497454,	'https://i.vimeocdn.com/video/782095290-d26ca64400bc50b080bf24ec92a8d50a6996ed9b7a23a5e097473bd10330b562-d?mw=700&mh=393&q=70',	'spring2019', 'cas190',	'A new resident has trouble adjusting to his floor and it''s strange residents.');
 
 -- SAMPLE QUERIES
@@ -36,7 +39,7 @@ SELECT name
 FROM Movie
 WHERE name LIKE '%The%';
 
--- Search by semester 
+-- Search by semester
 SELECT name
 FROM Movie
 WHERE Movie.semester = 'fall2021';
