@@ -8,11 +8,11 @@
 -- Create the schema.
 CREATE TABLE Movie (
 	ID integer PRIMARY KEY,
-	name varchar(50) NOT NULL,
-  vimeoKey INTEGER,
+	name varchar(100) NOT NULL,
+  vimeoKey INTEGER NOT NULL,
   imageLink varchar(200),
-  semester varchar(50),
-  class varchar(50),
+  semester varchar(30),
+  class varchar(30),
   description varchar(500)
 );
 

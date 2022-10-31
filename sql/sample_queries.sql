@@ -7,7 +7,7 @@
 -- Search by title: supposed the user typed in "the" in search bar
 SELECT name
 FROM Movie
-WHERE name LIKE '%The%';
+WHERE title LIKE '%The%';
 
 -- Search by semester 
 SELECT name
