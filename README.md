@@ -3,5 +3,5 @@ This repository holds our data service applications for the [Knightflix project]
 
 - URL HERE
 
-The database is a relational model that is hosted on ElephantSQL. The database is accessed by our project using Heroku. 
+The database is a relational model that is hosted on ElephantSQL. The database is accessed by our project using Azure. 
 
