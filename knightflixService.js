@@ -30,20 +30,9 @@ app.use((err, req, res) => {
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
 router.get("/movies", readMovies);
-router.get("/movies/:class", readMoviesByClass);
 
 function readMovies(req, res, next) {
     db.many("SELECT * FROM Movie")
-        .then(data => {
-            res.send(data);
-        })
-        .catch(err => {
-            next(err);
-        });
-}
-
-function readMoviesByClass(req, res, next) {
-    db.many("SELECT * FROM Movie WHERE class=${title}", req.params)
         .then(data => {
             res.send(data);
         })
